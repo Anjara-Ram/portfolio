@@ -7,23 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
      crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!--Header Navbar Section-->
     <header">
         <nav class="navbar navbar-expand-lg navbar-light">
            <div class="container bg-success">
-                <a href="" class="navbar-brand">Mon Portfolio</a>
+                <a href="#home" class="navbar-brand">Mon Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav ms-auto gap-3  mb-lg-0">
-                        <li class="nav-item"><a class="nav-link px-2" href="#">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#">À Propos</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#">Projets</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#">Certificats</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>      
                     </ul>
@@ -45,12 +49,12 @@
                             techniques.
                         </p>
                         <div class="d-flex mb-8">
-                            <h3><a class="p-3" href="https://www.linkedin.com/in/anjara-fitahiana-rambinintsoa-490705379/"><i class="bi bi-linkedin"></i></a></h3>
-                            <h3><a class="p-3" href="https://github.com/Anjara-Ram"><i class="bi bi-github"></i></a></h3>
-                            <h3><a href="mailto:anjaraven159@gmail.com" class="p-3"><i class="bi bi-envelope"></i></a></h3>
+                            <h3><a class="p-3" href="https://www.linkedin.com/in/anjara-fitahiana-rambinintsoa-490705379/"><i class="fa-brands fa-linkedin-in"></i></i></a></h3>
+                            <h3><a class="p-3" href="https://github.com/Anjara-Ram"><i class="fa-brands fa-github"></i></a></h3>
+                            <h3><a href="mailto:anjaraven159@gmail.com" class="p-3"><i class="fa-solid fa-envelope"></i></i></a></h3>
                         </div>
                         <div>
-                            <a class="btn" target="__blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">Download CV <i class="bi bi-file-earmark-arrow-down"></i></a>
+                            <a class="btn" target="__blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">Download CV <i class="fa-solid fa-download"></i></a>
                             <a class="btn" href="#">Contact</a>
                         </div>
                     </div>
@@ -75,7 +79,7 @@
                         <div class="d-flex align-items-center">
                             <div class="m-3">
                                 <h1>
-                                    <i class="bi bi-mortarboard-fill"></i>
+                                    <i class="fa-solid fa-graduation-cap"></i>
                                 </h1>
                             </div>
                             <div class="ms-3">
@@ -88,7 +92,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div class="m-3">
-                                <h1><i class="bi bi-mortarboard-fill"></i></h1>
+                                <h1><i class="fa-solid fa-graduation-cap"></i></h1>
                             </div>
                             <div class="ms-3">
                                 <h5 class="card-title">Département Mathématiques Communes</h5>
@@ -100,7 +104,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div class="m-3">
-                                <h1><i class="bi bi-mortarboard-fill"></i></h1>
+                                <h1><i class="fa-solid fa-graduation-cap"></i></h1>
                             </div>
                             <div class="ms-3">
                                 <h5 class="card-title">Anglais : High Intermediate (HI) - Advanced 1 Certificate (A1C)</h5>
@@ -118,6 +122,174 @@
                         des mathématiques en informatique, là où la théorie rencontre l'impact concret.
                     </p>
                 </div>
+            </div>
+        </section>
+        <!--Skills sections-->
+        <section id="skills">
+            <h1 class="d-flex justify-content-center m-5">MES COMPÉTENCES</h1>
+            <div class="container text-center bg-warning">
+                <div class="row row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!--Programmation-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Programmation</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/python.png" alt="python"></h1>
+                                    <p>Python</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/C.png" alt="C"></h1>
+                                    <p>C</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/c++.png" alt="C++"></h1>
+                                    <p>C++</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/java.png" alt="java"></h1>
+                                    <p>Java</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/kotlin.png" alt="kotlin"></h1>
+                                    <p>Kotlin</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><i class="fa-brands fa-square-js" style="color: #FFD43B;"></i></h1>
+                                    <p>JavaScript</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Machine Learning & AI-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Machine Learning & IA</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/sklearn.png" alt="sklearn"></h1>
+                                    <p>Scikit-learn</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/TensorFlow.png" alt="tensorflow"></h1>
+                                    <p>TensorFlow</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Data Visualisation-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Analyse de données</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/numpy.png" alt="numpy"></h1>
+                                    <p>Scikit-learn</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/pandas.png" alt="pandas"></h1>
+                                    <p>Pandas</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/matplotlib.png" alt="matplotlib"></h1>
+                                    <p>Matplotlib</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/seaborn.png" alt="seaborn"></h1>
+                                    <p>Seaborn</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Web Development-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Dévéloppement Web</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/html.png" alt="html"></h1>
+                                    <p>HTML</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><img class="icon" src="/assets/tools_icon/css-3.png" alt="css"></h1>
+                                    <p>CSS</p>
+                                  </div>
+                                  <div class="col">
+                                    <h1><i class="fa-brands fa-bootstrap" style="color: #6744cf;"></i></h1>
+                                    <p>Bootstrap</p>
+                                  </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tools-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Outils</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <h1><img class="icon" src="assets/tools_icon/vscode.png" alt="vscode"></h1>
+                                        <p>VS Code</p>
+                                    </div>  
+                                    <div class="col">
+                                        <h1><img class="icon" src="/assets/tools_icon/Jupyter-logo.png" alt="jupyter-notebook"></h1>
+                                        <p>Jupyter Notebook</p>
+                                    </div>
+                                    <div class="col">
+                                        <h1><i class="fa-brands fa-git-alt" style="color: #f23818;"></i></h1>
+                                        <p>Git</p>
+                                    </div>
+                                    <div class="col">
+                                        <h1><img class="icon" src="assets/tools_icon/github.png" alt="github"></h1>
+                                        <p>Github</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Design-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h4>Outils</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                        <h1><img class="icon" src="assets/tools_icon/figma.png" alt="figma"></h1>
+                                        <p>Figma</p>
+                                    </div>
+                                    <div class="col">
+                                        <h1><img class="icon" src="assets/tools_icon/photoshop.png" alt="photoshop"></h1>
+                                        <p>Photoshop</p>
+                                    </div>
+                                    <div class="col">
+                                        <h1><img src="assets/tools_icon/canva.png" alt="canva" class="icon"></h1>
+                                        <p>Canva</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
             </div>
         </section>
 
