@@ -2,3 +2,8 @@
     weight:40px;
     height: 40px;
 }
+.project-img {
+    height: 300px;          /* choose what looks good: 180–240px */
+    object-fit: cover;      /* crop, don’t stretch */
+    width: 100%;
+}

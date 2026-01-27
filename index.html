@@ -26,8 +26,8 @@
                     <ul class="navbar-nav ms-auto gap-3  mb-lg-0">
                         <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#">Compétences</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#projects">Projets</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#">Certificats</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#">Contact</a></li>      
                     </ul>
@@ -127,8 +127,8 @@
         <!--Skills sections-->
         <section id="skills">
             <h1 class="d-flex justify-content-center m-5">MES COMPÉTENCES</h1>
-            <div class="container text-center bg-warning">
-                <div class="row row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="container text-center bg-warning p-2">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!--Programmation-->
                     <div class="col">
                         <div class="card h-100">
@@ -269,7 +269,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Outils</h4>
+                                <h4>Design</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -290,6 +290,135 @@
                         </div>
                     </div>
                 </div>           
+            </div>
+        </section>
+        <!--Projects Section-->
+        <section id="projects">
+            <h1 class="d-flex justify-content-center m-5">MES PROJETS</h1>
+            <div class="container bg-success">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!--Project 1-->
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="assets/project_images/AI_arduino.png" class="card-img-top project-img" alt="ai_arduino">
+                          <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Classement des gestes</h5>
+                            <p class="card-text">Ce projet est axé sur l'interprétation du mouvement physique en temps réel. 
+                                Il implique la capture de données à haute fréquence relatives au mouvement, telles que l'accélération et la rotation..
+                            </p>
+                            <div class="mb-3 d-flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-warning">Python</span>
+                                <span class="px-3 py-1 bg-warning">C++</span>
+                                <span class="px-3 py-1 bg-warning">TensorFlow</span>
+                                <span class="px-3 py-1 bg-warning">Arduino</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/Anjara-Ram/AI_GestureClassification" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
+                            </div>       
+                          </div>
+                        </div>
+                    </div>
+                    <!--Project 2-->
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="assets/project_images/CTR.webp" class="card-img-top project-img" alt="click_through_rate">
+                          <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Project Prédiction du taux de clics</h5>
+                            <p class="card-text">Systeme de classification binaire pour prédire si les utilisateurs cliqueront sur des publicités
+                                mobiles a l' aide de plusieurs algorithmes de Machine Learning avec optimisation des hyper-paramètres
+                            </p>
+                             <div class="mb-3 d-flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-warning">Supervised Learning</span>
+                                <span class="px-3 py-1 bg-warning">Random Forest</span>
+                                <span class="px-3 py-1 bg-warning">Decision Tree</span>
+                                <span class="px-3 py-1 bg-warning">XG Boost</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/Anjara-Ram/Click_through_rate_predictions" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!--Project 3-->
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="assets/project_images/lyrics.png" class="card-img-top project-img" alt="fihirana">
+                          <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Application de paroles de culte</h5>
+                            <p class="card-text">
+                                Application Android conçue pour offrir une collection accessible et organisée de nos chants chrétiens et évangéliques.
+                            </p>
+                            <div class="mb-3 d-flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-warning">Figma</span>
+                                <span class="px-3 py-1 bg-warning">Github</span>
+                                <span class="px-3 py-1 bg-warning">Kotlin</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/Anjara-Ram/Tononkira" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!--Project 4-->
+                    <div class="col">
+                        <div class="card h-100">
+                          <img src="assets/project_images/drink.jpg" class="card-img-top project-img" alt="boisson">
+                          <div class="card-body">
+                            <h5 class="card-title">Site vitrine de boisson</h5>
+                            <p class="card-text">Conception et realisation d' une application web vitrine de démonstration dédiée à la marque de 
+                                boisson malgache STAR, optimisée exclusivement pour une utilisation sur ordinateur</p>
+                            <div class="mb-3 d-flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-warning">Html</span>
+                                <span class="px-3 py-1 bg-warning">Bootstrap</span>
+                                <span class="px-3 py-1 bg-warning">JavaScript</span>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-3">
+                                <a href="https://github.com/Anjara-Ram/Drink-Store" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
+                                <a href="https://drinkstorestardemo.netlify.app" class="btn btn-primary">Demo <i class="fa-solid fa-earth-americas"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!--Project 5-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/project_images/face_rec.png" class="card-img-top project-img" alt="face_rec">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Système de reconnaissance faciale</h5>
+                                <p class="card-text">Un projet Machine Learning mettant 
+                                    en œuvre la reconnaissance faciale sur l'ensemble de données Labeled Faces in the Wild.
+                                </p>
+                                <div class="mb-3 d-flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-warning">Pandas</span>
+                                    <span class="px-3 py-1 bg-warning">Matplotlib</span>
+                                    <span class="px-3 py-1 bg-warning">Support Vector Machine</span>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="https://github.com/Anjara-Ram/image_classification" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Project 6-->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/project_images/breast_cancer.webp" class="card-img-top project-img" alt="breast_cancer">
+                            <div class="card-body d-flex flex-column">
+                              <h5 class="card-title">Prédiction du cancer du sein</h5>
+                              <p class="card-text">Une implémentation de Machine Learning afin de faire 
+                                une classification binaire des tumeurs du cancer du sein en malignes ou bénignes
+                              </p>
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                  <span class="px-3 py-1 bg-warning">Régression Logistique</span>
+                                  <span class="px-3 py-1 bg-warning">Pandas</span>
+                              </div>
+                              <div class="mt-auto">
+                                  <a href="https://github.com/Anjara-Ram/Breast_cancer_predictions" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
