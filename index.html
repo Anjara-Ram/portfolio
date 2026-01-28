@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Import Bootstrap and Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
      crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav_and_home_style.css">
+    
 </head>
 <body>
     <!--Header Navbar Section-->
-    <header">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-           <div class="container bg-success">
-                <a href="#home" class="navbar-brand">Mon Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+                    <a href="" class="navbar-brand"><img class="logo" src="assets/picture/my_logo.png" alt="logo"></a>
+                <button id="burger" class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav ms-auto gap-3  mb-lg-0">
+                    <ul class="navbar-nav ms-auto gap-3 mb-lg-0">
                         <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
                         <li class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
@@ -37,31 +41,30 @@
     </header>
     <main>
         <!--Home section-->
-        <section id="home" class="container bg-info px-4">
+        <section id="home" class="container px-4">
             <div class="row align-items-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6 order-lg-1">
                     <div class="my-5">
-                        <h4>Bonjour, Je m'appelle</h4>
-                        <h1>RAMBININTSOA Anjara Fitahiana</h1>
-                        <h3>Licencié en Mathématiques Appliquées</h3>
-                        <p>passionné par les sciences des données et l’intelligence artificielle, avec
-                            une forte motivation pour les applications mathématiques en informatique. Étant curieux et attiré par les défis
-                            techniques.
+                        <h5>Bonjour, Je m'appelle</h5>
+                        <h1 class="mt-5"><span class="masked-text">Anjara Fitahiana <br>RAMBININTSOA</span></h1>
+                        <h3 class="my-5">Licencié en <span class="maths-appli">Mathématiques Appliquées</span></h3>
+                        <p>Passionné par la data science et l’intelligence artificielle, je m’intéresse particulièrement à la résolution de problèmes mathématiques appliqués à l’informatique. Curieux et motivé par les défis techniques,
+                             je cherche constamment à approfondir mes compétences et à relever de nouveaux challenges
                         </p>
-                        <div class="d-flex mb-8">
+                        <div class="d-flex my-5 social-media">
                             <h3><a class="p-3" href="https://www.linkedin.com/in/anjara-fitahiana-rambinintsoa-490705379/"><i class="fa-brands fa-linkedin-in"></i></i></a></h3>
                             <h3><a class="p-3" href="https://github.com/Anjara-Ram"><i class="fa-brands fa-github"></i></a></h3>
                             <h3><a href="mailto:anjaraven159@gmail.com" class="p-3"><i class="fa-solid fa-envelope"></i></i></a></h3>
                         </div>
-                        <div>
-                            <a class="btn" target="__blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">Download CV <i class="fa-solid fa-download"></i></a>
-                            <a class="btn" href="#">Contact</a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a id="cv-contact" class="px-3 py-2" target="__blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">Download CV <i id="cv-contact" class="fa-solid fa-download"></i></a>
+                            <a id="cv-contact" class="px-3 py-2" href="#contact">Contact <i  id="cv-contact" class="bi bi-telephone-fill"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col order-lg-2">
                     <div class="my-5">
-                        <img class="img-fluid" src="./assets/essai.png" alt="">
+                        <img class="img-fluid d-block mx-auto" src="/assets/picture/pfp.png" alt="">
                     </div>
                 </div>
             </div>
@@ -69,7 +72,7 @@
         <!--About section-->
         <section id="about" class="px-4">
             <h1 class="d-flex justify-content-center m-5">A PROPOS DE MOI</h1>
-            <div class="container bg-success my-3 p-1">
+            <div class="container my-3 p-1">
                 <!--Academic-->
                 <div class="card">
                     <div class="card-header">
@@ -115,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container bg-success my-3 p-1">
+            <div class="container my-3 p-1">
                 <div class="card p-3">
                     <p>
                         Passionnée par la science des données et l'intelligence artificielle, mon parcours universitaire m'a permis d'explorer les applications pratiques 
@@ -127,7 +130,7 @@
         <!--Skills sections-->
         <section id="skills" class="px-4">
             <h1 class="d-flex justify-content-center m-5">MES COMPÉTENCES</h1>
-            <div class="container text-center bg-warning p-2">
+            <div class="container text-center p-2">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!--Programmation-->
                     <div class="col">
@@ -295,7 +298,7 @@
         <!--Projects Section-->
         <section id="projects" class="px-4">
             <h1 class="d-flex justify-content-center m-5">MES PROJETS</h1>
-            <div class="container p-3 bg-success">
+            <div class="container p-3">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!--Project 1-->
                     <div class="col">
@@ -307,10 +310,10 @@
                                 Il implique la capture de données à haute fréquence relatives au mouvement, telles que l'accélération et la rotation..
                             </p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-warning">Python</span>
-                                <span class="px-3 py-1 bg-warning">C++</span>
-                                <span class="px-3 py-1 bg-warning">TensorFlow</span>
-                                <span class="px-3 py-1 bg-warning">Arduino</span>
+                                <span class="px-3 py-1">Python</span>
+                                <span class="px-3 py-1">C++</span>
+                                <span class="px-3 py-1">TensorFlow</span>
+                                <span class="px-3 py-1">Arduino</span>
                             </div>
                             <div class="mt-auto">
                                 <a href="https://github.com/Anjara-Ram/AI_GestureClassification" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
@@ -328,10 +331,10 @@
                                 mobiles a l' aide de plusieurs algorithmes de Machine Learning avec optimisation des hyper-paramètres
                             </p>
                              <div class="mb-3 d-flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-warning">Supervised Learning</span>
-                                <span class="px-3 py-1 bg-warning">Random Forest</span>
-                                <span class="px-3 py-1 bg-warning">Decision Tree</span>
-                                <span class="px-3 py-1 bg-warning">XG Boost</span>
+                                <span class="px-3 py-1">Supervised Learning</span>
+                                <span class="px-3 py-1">Random Forest</span>
+                                <span class="px-3 py-1">Decision Tree</span>
+                                <span class="px-3 py-1">XG Boost</span>
                             </div>
                             <div class="mt-auto">
                                 <a href="https://github.com/Anjara-Ram/Click_through_rate_predictions" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
@@ -349,9 +352,9 @@
                                 Application Android conçue pour offrir une collection accessible et organisée de nos chants chrétiens et évangéliques.
                             </p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-warning">Figma</span>
-                                <span class="px-3 py-1 bg-warning">Github</span>
-                                <span class="px-3 py-1 bg-warning">Kotlin</span>
+                                <span class="px-3 py-1">Figma</span>
+                                <span class="px-3 py-1">Github</span>
+                                <span class="px-3 py-1">Kotlin</span>
                             </div>
                             <div class="mt-auto">
                                 <a href="https://github.com/Anjara-Ram/Tononkira" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
@@ -368,9 +371,9 @@
                             <p class="card-text">Conception et realisation d' une application web vitrine de démonstration dédiée à la marque de 
                                 boisson malgache STAR, optimisée exclusivement pour une utilisation sur ordinateur</p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-warning">Html</span>
-                                <span class="px-3 py-1 bg-warning">Bootstrap</span>
-                                <span class="px-3 py-1 bg-warning">JavaScript</span>
+                                <span class="px-3 py-1">Html</span>
+                                <span class="px-3 py-1">Bootstrap</span>
+                                <span class="px-3 py-1">JavaScript</span>
                             </div>
                             <div class="mt-auto d-flex flex-wrap gap-3">
                                 <a href="https://github.com/Anjara-Ram/Drink-Store" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
@@ -389,9 +392,9 @@
                                     en œuvre la reconnaissance faciale sur l'ensemble de données Labeled Faces in the Wild.
                                 </p>
                                 <div class="mb-3 d-flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-warning">Pandas</span>
-                                    <span class="px-3 py-1 bg-warning">Matplotlib</span>
-                                    <span class="px-3 py-1 bg-warning">Support Vector Machine</span>
+                                    <span class="px-3 py-1">Pandas</span>
+                                    <span class="px-3 py-1">Matplotlib</span>
+                                    <span class="px-3 py-1">Support Vector Machine</span>
                                 </div>
                                 <div class="mt-auto">
                                     <a href="https://github.com/Anjara-Ram/image_classification" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>              
@@ -409,8 +412,8 @@
                                 une classification binaire des tumeurs du cancer du sein en malignes ou bénignes
                               </p>
                               <div class="mb-3 d-flex flex-wrap gap-2">
-                                  <span class="px-3 py-1 bg-warning">Régression Logistique</span>
-                                  <span class="px-3 py-1 bg-warning">Pandas</span>
+                                  <span class="px-3 py-1">Régression Logistique</span>
+                                  <span class="px-3 py-1">Pandas</span>
                               </div>
                               <div class="mt-auto">
                                   <a href="https://github.com/Anjara-Ram/Breast_cancer_predictions" class="btn btn-primary">Github <i class="fa-brands fa-github"></i></a>
@@ -423,7 +426,7 @@
         </section>
         <section id="certificates" class="px-4">
             <h1 class="d-flex justify-content-center m-5">MES CERTIFICATS</h1>
-            <div class="container p-3 bg-info">
+            <div class="container p-3">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!--Certificat 1-->
                     <div class="col">
@@ -585,7 +588,7 @@
         </section>
         <section id="contact" class="px-4">
             <h1 class="d-flex justify-content-center m-5">MES CONTACT</h1>
-            <div class="container p-3 bg-success">
+            <div class="container p-3">
                 <div class="row">
                     <div class="col-lg-7">
                         <!--Contact left-->
@@ -647,9 +650,9 @@
             </div>
         </section>      
     </main>
-    <footer class="bg-info mt-2">
+    <footer class="mt-2">
         <div class="container pt-3">
-            <div class="bg-success m-1 p-3">
+            <div class="m-1 p-3">
             <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-5">
                 <a href="#about">À Propos</a>
                 <a href="#skills">Compétences</a>

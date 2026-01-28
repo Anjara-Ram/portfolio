@@ -1,0 +1,81 @@
+.nav-link {
+  text-decoration: none;
+  transition: 0.4s;
+  position: relative;
+  color: var(--color-secondary) !important;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary);
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s;
+}
+.nav-link:hover::before {
+  width: 100%;
+  color: var(--color-secondary);
+}
+
+.logo {
+  width: 180px;
+  height: 100px;
+}
+
+#burger {
+  border: none !important;
+}
+
+.masked-text {
+    font-weight: bold;
+    color: transparent;
+    background-image: url("../assets/image/background.jpg"); 
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.maths-appli {
+  color: var(--text-color-cyan2);
+}
+
+/* social-media */
+.social-media h3 {
+  text-decoration: none;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.social-media h3:hover {
+  transform: translateY(-10px);
+}
+
+#cv-contact {
+  text-decoration: none;
+  background-color: var(--text-color-cyan);
+  border-radius: 35px;
+  color: var(--text-color-dark);
+  transition: all 0.4s;
+}
+
+#cv-contact:hover {
+  transform: translateY(-10px);
+  box-shadow:0 10px 20px rgba(0,0,0,.40);
+}
+
+
