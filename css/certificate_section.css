@@ -1,0 +1,53 @@
+#certificates * {
+    background: transparent;
+    color: var(--text-color-dark);
+}
+#certificates .card {
+    background: var(--color-secondary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 20px;
+}
+#certificates .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    transition: all 0.4s;
+}
+#certificates .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.3s;
+}
+
+#certificates img{
+    border-radius: 50%;
+    background: #ffffffd4;
+}
+#certificates .btn {
+    border: 1px solid var(--text-color-dark);
+    border-radius: 20px;
+    font-weight: 500;
+}
+#certificates .btn:hover{
+    color: var(--color-secondary);
+    background: var(--color-primary);
+
+}
+
+@media (max-width: 768px) {
+    #certificates h5 {
+        font-size: 1rem;
+    }
+    #certificates h6{
+        font-size: 0.8rem;
+    }
+    #certificates p {
+        font-size: 0.9rem;
+    }
+    #certificates .btn{
+        font-size: 0.8rem;
+    }
+
+    
+}
