@@ -1,0 +1,25 @@
+#skills * {
+    background: transparent;
+    color: var(--color-secondary);
+}
+#skills .card {
+    border: none;
+    background-color: var(--card-color);
+    box-shadow:0 5px 20px rgba(0,0,0,.40);
+    border-radius: 20px;
+}
+
+#skills .card-header {
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+#skills .skill-badge{
+  text-decoration: none;
+  transition: all 0.4s;
+  position: relative;
+}
+
+#skills .skill-badge:hover {
+  background: #0c636d;
+  border-radius: 10px;
+}
