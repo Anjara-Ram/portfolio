@@ -1,0 +1,43 @@
+:root {
+    --card-color : #0a4f57;
+}
+#about * {
+    background: transparent;
+    color: var(--color-secondary);
+}
+
+#about .card {
+    border: none;
+    background-color: var(--card-color);
+    box-shadow:0 5px 20px rgba(0,0,0,.40);
+    border-radius: 20px;
+}
+
+#about .card .year{
+    font-size: 0.9rem;
+    color: var(--text-color-cyan);
+}
+
+#about .card i {
+    color: #b1f7ff;
+}
+
+@media (max-width: 768px) {
+    #about h3 {
+        font-size: 1.5rem;
+    }
+    #about h5 {
+        font-size: 1.1rem;
+    }
+    #about h6 {
+        font-size: 0.9rem;
+    }
+    #about .card .year{
+        font-size: 0.8rem;
+        color: var(--text-color-cyan);
+    }
+    #about p {
+        font-size: 0.9rem;
+    }
+    
+}

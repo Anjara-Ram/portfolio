@@ -149,7 +149,7 @@
   color: var(--text-color-dark);
 }
 
-@media (max-width: 991.98px) { /* lg breakpoint */
+@media (max-width: 1200px) { /* lg breakpoint */
   .navbar-collapse {
     backdrop-filter: blur(8px);            /* optional modern blur */
   }
