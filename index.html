@@ -20,58 +20,60 @@
 <body>
     <!--Header Navbar Section-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                    <a href="" class="navbar-brand"><img class="logo" src="assets/picture/my_logo.png" alt="logo"></a>
-                <button id="burger" class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav ms-auto gap-3 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#projects">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#certificates">Certificats</a></li>
-                        <li class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>      
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
         <!--Home section-->
-        <section id="home" class="container px-4">
-            <div class="row align-items-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6 order-lg-1">
-                    <div class="my-5">
+        <section id="home" class="d-flex align-items-center pb-3">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container">
+                    <a href="#home" class="navbar-brand"><img class="logo" src="assets/picture/my_logo.png" alt="logo"></a>
+                    <button id="burger" class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#projects">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#certificates">Certificats</a></li>
+                            <li class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>      
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-xl-6 col-xxl-5 order-lg-1">
                         <h5>Bonjour, Je m'appelle</h5>
-                        <h1 class="mt-5"><span class="masked-text">Anjara Fitahiana <br>RAMBININTSOA</span></h1>
-                        <h3 class="my-5">Licencié en <span class="maths-appli">Mathématiques Appliquées</span></h3>
+                        <h1 class="mt-5 masked-text">Anjara Fitahiana RAMBININTSOA</h1>
+                        <h3 class="my-5 degree">Licencié en <br> <span class="maths-appli typewriter-degree"></span></h3>
                         <p>Passionné par la data science et l’intelligence artificielle, je m’intéresse particulièrement à la résolution de problèmes mathématiques appliqués à l’informatique. Curieux et motivé par les défis techniques,
                              je cherche constamment à approfondir mes compétences et à relever de nouveaux challenges
                         </p>
-                        <div class="d-flex my-5 social-media">
-                            <h3><a class="p-3" href="https://www.linkedin.com/in/anjara-fitahiana-rambinintsoa-490705379/"><i class="fa-brands fa-linkedin-in"></i></i></a></h3>
-                            <h3><a class="p-3" href="https://github.com/Anjara-Ram"><i class="fa-brands fa-github"></i></a></h3>
-                            <h3><a href="mailto:anjaraven159@gmail.com" class="p-3"><i class="fa-solid fa-envelope"></i></i></a></h3>
+                        <div class="d-flex my-5">
+                            <a class="p-3 social-icon" href="https://www.linkedin.com/in/anjara-fitahiana-rambinintsoa-490705379/" target="_blank"><i class="fa-brands fa-linkedin-in fs-3"></i></a>
+                            <a class="p-3 social-icon" href="https://github.com/Anjara-Ram" target="_blank"><i class="fa-brands fa-github fs-3"></i></a>
+                            <a href="mailto:anjaraven159@gmail.com" class="p-3 social-icon" target="_blank"><i class="fa-solid fa-envelope fs-3"></i></a>
                         </div>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a id="cv-contact" class="px-3 py-2" target="__blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">Download CV <i id="cv-contact" class="fa-solid fa-download"></i></a>
-                            <a id="cv-contact" class="px-3 py-2" href="#contact">Contact <i  id="cv-contact" class="bi bi-telephone-fill"></i></a>
+                        <div class="d-flex justify-content-center flex-column flex-md-row gap-3 align-items-center">
+                            <a id="cv-contact" class="px-4 py-3 mx-4" target="_blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">
+                                Télécharger CV <i id="contact-logo" class="fa-solid fa-download"></i>
+                            </a>
+                            <a id="cv-contact" class="px-4 py-3 mx-4" href="#contact">
+                                Me Contacter <i  id="contact-logo" class="bi bi-telephone-fill"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col order-lg-2">
-                    <div class="my-5">
-                        <img class="img-fluid d-block mx-auto" src="/assets/picture/pfp.png" alt="">
+                    <div class="col order-lg-2 my-5">   
+                        <img class="img-fluid d-block mx-auto" src="/assets/picture/pfp.png" alt="pfp">
                     </div>
                 </div>
             </div>
         </section>
+    </header>
+    <main>
         <!--About section-->
         <section id="about" class="px-4">
-            <h1 class="d-flex justify-content-center m-5">A PROPOS DE MOI</h1>
+            <h1 class="text-center my-5"><b>A PROPOS DE MOI</b></h1>
             <div class="container my-3 p-1">
                 <!--Academic-->
                 <div class="card">

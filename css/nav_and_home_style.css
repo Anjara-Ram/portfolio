@@ -1,10 +1,17 @@
+#home *{
+  background-color: transparent;
+}
+#home {
+  background-image: url("../assets/image/home-background.png");
+  background-size: cover;
+  padding-top: 150px;
+}
 .nav-link {
   text-decoration: none;
   transition: 0.4s;
   position: relative;
   color: var(--color-secondary) !important;
 }
-
 .nav-link::before {
   content: "";
   position: absolute;
@@ -50,32 +57,117 @@
     }
 }
 
+.navbar {
+  backdrop-filter: blur(5px);
+}
+/* maths appli */
+.degree {
+  font-size: clamp(1.2rem, 4vw, 2rem); /* mobile friendly */
+  white-space: nowrap;
+}
+
+/* TYPEWRITER */
+@keyframes typingDegree {
+  0%, 20% { content: ""; }
+  22% { content: "M"; }
+  24% { content: "Ma"; }
+  26% { content: "Mat"; }
+  28% { content: "Math"; }
+  30% { content: "Mathé"; }
+  32% { content: "Mathém"; }
+  34% { content: "Mathéma"; }
+  36% { content: "Mathémat"; }
+  38% { content: "Mathématique"; }
+  40% { content: "Mathématiques"; }
+  42% { content: "Mathématiques "; }
+  44% { content: "Mathématiques A"; }
+  46% { content: "Mathématiques Ap"; }
+  48% { content: "Mathématiques Appli"; }
+  50%, 100% { content: "Mathématiques Appliquées"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-degree::before {
+  content: "";
+  animation: typingDegree 6s infinite;
+}
+
+.typewriter-degree::after {
+  content: "";
+  border-right: 2px solid currentColor;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion) {
+  .typewriter-degree::before {
+    content: "Mathématiques Appliquées";
+    animation: none;
+  }
+  .typewriter-degree::after {
+    display: none;
+  }
+}
+
+
 .maths-appli {
   color: var(--text-color-cyan2);
 }
 
 /* social-media */
-.social-media h3 {
+.social-icon{
   text-decoration: none;
   transition: all 0.4s;
   position: relative;
 }
 
-.social-media h3:hover {
+.social-icon:hover {
   transform: translateY(-10px);
 }
-
 #cv-contact {
   text-decoration: none;
   background-color: var(--text-color-cyan);
   border-radius: 35px;
   color: var(--text-color-dark);
   transition: all 0.4s;
+  width: fit-content;
+  font-weight: 600;
 }
 
 #cv-contact:hover {
   transform: translateY(-10px);
   box-shadow:0 10px 20px rgba(0,0,0,.40);
 }
+#contact-logo {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--text-color-dark);
+}
 
+@media (max-width: 991.98px) { /* lg breakpoint */
+  .navbar-collapse {
+    backdrop-filter: blur(8px);            /* optional modern blur */
+  }
 
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #cv-contact{
+    font-size: 0.8rem;
+  }
+
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* highlight color */
+  }
+}
