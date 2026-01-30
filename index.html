@@ -83,12 +83,12 @@
     <main>
         <!--About section-->
         <section id="about" class="px-4 py-2">
-            <h1 class="text-center my-5"><b>A PROPOS DE MOI</b></h1>
+            <h1 class="text-center my-5"><b id="aboutText">A PROPOS DE MOI</b></h1>
             <div class="container my-3 p-1">
                 <!--Academic-->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="ms-3">Formations Académiques</h3>
+                        <h3 id="academicTitle" class="ms-3">Formations Académiques</h3>
                     </div>
                     <div class="card-body">
                         <div class="d-flex align-items-center">
@@ -98,9 +98,9 @@
                                 </h1>
                             </div>
                             <div class="ms-3">
-                                <h5 class="card-title">Licence en Mathématiques Appliquées</h5>
-                                <h6 class="card-subtitle text-body-secondary mb-2">Université d' Antananarivo</h6>
-                                <h6 class="card-subtitle year px-1">2024-2025</h6>
+                                <h5 id="degree1" class="card-title">Licence en Mathématiques Appliquées</h5>
+                                <h6 id="university1" class="card-subtitle text-body-secondary mb-2">Université d' Antananarivo</h6>
+                                <h6 id="year1" class="card-subtitle year px-1">2024-2025</h6>
                             </div>
                         </div>
                     </div>
@@ -110,9 +110,9 @@
                                 <h1><i class="fa-solid fa-graduation-cap"></i></h1>
                             </div>
                             <div class="ms-3">
-                                <h5 class="card-title">Mathématiques et Informatiques</h5>
-                                <h6 class="card-subtitle text-body-secondary mb-2">Université d' Antananarivo</h6>
-                                <h6 class="card-subtitle year px-1">2022-2024</h6>
+                                <h5 id="degree2" class="card-title">Mathématiques et Informatiques</h5>
+                                <h6 id="university2" class="card-subtitle text-body-secondary mb-2">Université d' Antananarivo</h6>
+                                <h6 id="year2" class="card-subtitle year px-1">2022-2024</h6>
                             </div>
                         </div>
                     </div>
@@ -122,9 +122,9 @@
                                 <h1><i class="fa-solid fa-graduation-cap"></i></h1>
                             </div>
                             <div class="ms-3">
-                                <h5 class="card-title">Anglais : High Intermediate (HI) - Advanced 1 Certificate (A1C)</h5>
-                                <h6 class="card-subtitle text-body-secondary mb-2">English Teaching Program (ETP)</h6>
-                                <h6 class="card-subtitle year px-1">Août 2021 - Sept 2022</h6>
+                                <h5 id="degree3" class="card-title">Anglais : High Intermediate (HI) - Advanced 1 Certificate (A1C)</h5>
+                                <h6 id="university3" class="card-subtitle text-body-secondary mb-2">English Teaching Program (ETP)</h6>
+                                <h6 id="year3" class="card-subtitle year px-1">Août 2021 - Sept 2022</h6>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
             </div>
             <div class="container my-3 p-1">
                 <div class="card p-3">
-                    <p>
+                    <p id="aboutParagraph">
                         Passionnée par la science des données et l'intelligence artificielle, mon parcours universitaire m'a permis d'explorer les applications pratiques 
                         des mathématiques en informatique, là où la théorie rencontre l'impact concret.
                     </p>
@@ -141,14 +141,14 @@
         </section>
         <!--Skills sections-->
         <section id="skills" class="px-4">
-            <h1 class="text-center m-5"><b>MES COMPÉTENCES</b></h1>
+            <h1 class="text-center m-5"><b id="skillsTitle">MES COMPÉTENCES</b></h1>
             <div class="container text-center p-2">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!--Programmation-->
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Programmation</h4>
+                                <h4 id="programmingTitle">Programmation</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -196,7 +196,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Machine Learning & IA</h4>
+                                <h4 id="mlTitle">Machine Learning & IA</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -222,7 +222,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Analyse de données</h4>
+                                <h4 id="dataAnalysisTitle">Analyse de données</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -230,7 +230,7 @@
                                     <div class="skill-badge px-2 py-3">
                                         <h1><img class="icon" src="/assets/tools_icon/numpy.png" alt="numpy"></h1>
                                     </div>
-                                    <p>Scikit-learn</p>
+                                    <p>Numpy</p>
                                   </div>
                                   <div class="col">
                                     <div class="skill-badge px-2 py-3">
@@ -258,7 +258,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Dévéloppement Web</h4>
+                                <h4 id="webDevTitle">Dévéloppement Web</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -288,7 +288,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Outils</h4>
+                                <h4 id="toolsTitle">Outils</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -324,7 +324,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-header">
-                                <h4>Design</h4>
+                                <h4 id="designTitle">Design</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-3">
@@ -354,7 +354,7 @@
             </div>
         </section>
         <!--Projects Section-->
-        <h1 class="d-flex justify-content-center m-5"><b>MES PROJETS</b></h1>
+        <h1 class="d-flex justify-content-center m-5"><b id="projectsTitle">MES PROJETS</b></h1>
         <section id="projects" class="px-4">
             <div class="container p-3">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
@@ -363,8 +363,8 @@
                         <div class="card h-100">
                           <img src="assets/project_images/AI_arduino.png" class="card-img-top project-img" alt="ai_arduino">
                           <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><b>Classement des gestes</b></h5>
-                            <p class="card-text">Ce projet est axé sur l'interprétation du mouvement physique en temps réel. 
+                            <h5 class="card-title"><b id="project1Title">Classement des gestes</b></h5>
+                            <p class="card-text" id="project1Desc">Ce projet est axé sur l'interprétation du mouvement physique en temps réel. 
                                 Il implique la capture de données à haute fréquence relatives au mouvement, telles que l'accélération et la rotation..
                             </p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
@@ -384,8 +384,8 @@
                         <div class="card h-100">
                           <img src="assets/project_images/CTR.webp" class="card-img-top project-img" alt="click_through_rate">
                           <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><b>Project Prédiction du taux de clics</b></h5>
-                            <p class="card-text">Systeme de classification binaire pour prédire si les utilisateurs cliqueront sur des publicités
+                            <h5 class="card-title"><b id="project2Title">Project Prédiction du taux de clics</b></h5>
+                            <p class="card-text" id="project2Desc">Systeme de classification binaire pour prédire si les utilisateurs cliqueront sur des publicités
                                 mobiles a l' aide de plusieurs algorithmes de Machine Learning avec optimisation des hyper-paramètres
                             </p>
                              <div class="mb-3 d-flex flex-wrap gap-2">
@@ -405,8 +405,8 @@
                         <div class="card h-100">
                           <img src="assets/project_images/lyrics.png" class="card-img-top project-img" alt="fihirana">
                           <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><b>Application de paroles de culte</b></h5>
-                            <p class="card-text">
+                            <h5 class="card-title"><b id="project3Title">Application de paroles de culte</b></h5>
+                            <p class="card-text" id="project3Desc">
                                 Application Android conçue pour offrir une collection accessible et organisée de nos chants chrétiens et évangéliques.
                             </p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
@@ -425,8 +425,8 @@
                         <div class="card h-100">
                           <img src="assets/project_images/drink.jpg" class="card-img-top project-img" alt="boisson">
                           <div class="card-body">
-                            <h5 class="card-title"><b>Site vitrine de boisson</b></h5>
-                            <p class="card-text">Conception et realisation d' une application web vitrine de démonstration dédiée à la marque de 
+                            <h5 class="card-title"><b id="project4Title">Site vitrine de boisson</b></h5>
+                            <p class="card-text" id="project4Desc">Conception et realisation d' une application web vitrine de démonstration dédiée à la marque de 
                                 boisson malgache STAR, optimisée exclusivement pour une utilisation sur ordinateur</p>
                             <div class="mb-3 d-flex flex-wrap gap-2">
                                 <span class="px-3 py-1">Html</span>
@@ -445,8 +445,8 @@
                         <div class="card h-100">
                             <img src="assets/project_images/face_rec.png" class="card-img-top project-img" alt="face_rec">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><b>Système de reconnaissance faciale</b></h5>
-                                <p class="card-text">Un projet Machine Learning mettant 
+                                <h5 class="card-title"><b id="project5Title">Système de reconnaissance faciale</b></h5>
+                                <p class="card-text" id="project5Desc">Un projet Machine Learning mettant 
                                     en œuvre la reconnaissance faciale sur l'ensemble de données Labeled Faces in the Wild.
                                 </p>
                                 <div class="mb-3 d-flex flex-wrap gap-2">
@@ -465,8 +465,8 @@
                         <div class="card h-100">
                             <img src="assets/project_images/breast_cancer.webp" class="card-img-top project-img" alt="breast_cancer">
                             <div class="card-body d-flex flex-column">
-                              <h5 class="card-title"><b>Prédiction du cancer du sein</b></h5>
-                              <p class="card-text">Une implémentation de Machine Learning afin de faire 
+                              <h5 class="card-title"><b id="project6Title">Prédiction du cancer du sein</b></h5>
+                              <p class="card-text" id="project6Desc">Une implémentation de Machine Learning afin de faire 
                                 une classification binaire des tumeurs du cancer du sein en malignes ou bénignes
                               </p>
                               <div class="mb-3 d-flex flex-wrap gap-2">
@@ -483,7 +483,7 @@
             </div>
         </section>
         <!--Certificates section-->
-        <h1 class="d-flex justify-content-center m-5"><b>MES CERTIFICATS</b></h1>
+        <h1 class="d-flex justify-content-center m-5"><b id="certificatesTitle">MES CERTIFICATS</b></h1>
         <section id="certificates" class="px-4">
             <div class="container p-3">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -497,14 +497,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>First steps to Machine Learning and Artificial Intelligence Mastery</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">American Corner Antananarivo</h6>
+                                            <h5 class="card-title"><b id="cert1Title">First steps to Machine Learning and Artificial Intelligence Mastery</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert1Org">American Corner Antananarivo</h6>
                                             <h6 class="card-subtitle text-muted">2025</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-3">
-                                    <a href="https://drive.google.com/file/d/1jkAtUecoNVrsZgaWkDH03mXh0eJGf7Oj/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert1Btn" href="https://drive.google.com/file/d/1jkAtUecoNVrsZgaWkDH03mXh0eJGf7Oj/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>  
                         </div>
@@ -519,14 +519,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>Train a Supervised Machine Learning Model</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">OpenClassroom</h6>
+                                            <h5 class="card-title"><b id="cert2Title">Train a Supervised Machine Learning Model</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert2Org">OpenClassroom</h6>
                                             <h6 class="card-subtitle text-muted">2025</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1VhOk46XCrIv6JHd1gGVrjWaxsKqKWO4Y/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert2Btn" href="https://drive.google.com/file/d/1VhOk46XCrIv6JHd1gGVrjWaxsKqKWO4Y/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>  
                         </div>
@@ -541,14 +541,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>Nettoyez et analysez votre jeu de données</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">OpenClassroom</h6>
+                                            <h5 class="card-title"><b id="cert3Title">Nettoyez et analysez votre jeu de données</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert3Org">OpenClassroom</h6>
                                             <h6 class="card-subtitle text-muted">2025</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1ZPhFz5X6qQX2U3kUsjjCsTL8alA7kLP3/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert3Btn" href="https://drive.google.com/file/d/1ZPhFz5X6qQX2U3kUsjjCsTL8alA7kLP3/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>  
                         </div>
@@ -563,14 +563,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>MasterClass : Initiation à l'entrepreneuriat</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">Maison de l' entrepreneuriat</h6>
+                                            <h5 class="card-title"><b id="cert4Title">MasterClass : Initiation à l'entrepreneuriat</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert4Org">Maison de l' entrepreneuriat</h6>
                                             <h6 class="card-subtitle text-muted">2025</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1A-uFk-g9XZqsAqMpTVfpT3LbUDMzuipe/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert4Btn" href="https://drive.google.com/file/d/1A-uFk-g9XZqsAqMpTVfpT3LbUDMzuipe/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>  
                         </div>
@@ -585,14 +585,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>Initiation à Linux</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">OpenClassroom</h6>
+                                            <h5 class="card-title"><b id="cert5Title">Initiation à Linux</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert5Org">OpenClassroom</h6>
                                             <h6 class="card-subtitle text-muted">2024</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1qmoIUE-shJSGJdBtC6KAN49GsD1KmabD/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert5Btn" href="https://drive.google.com/file/d/1qmoIUE-shJSGJdBtC6KAN49GsD1KmabD/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</a>
                                 </div>
                             </div>  
                         </div>
@@ -607,14 +607,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>Découvrez les librairies Python pour la Data Science</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">OpenClassroom</h6>
+                                            <h5 class="card-title"><b id="cert6Title">Découvrez les librairies Python pour la Data Science</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert6Org">OpenClassroom</h6>
                                             <h6 class="card-subtitle text-muted">2024</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1NL8m5xdvXd1sHp-ImT43MCahT93tg3tc/view?usp=sharing"  target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert6Btn" href="https://drive.google.com/file/d/1NL8m5xdvXd1sHp-ImT43MCahT93tg3tc/view?usp=sharing"  target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>
                         </div>
@@ -629,14 +629,14 @@
                                     </div>
                                     <div>
                                         <div class="ms-3">
-                                            <h5 class="card-title"><b>Initiation Arduino</b></h5>
-                                            <h6 class="card-subtitle text-body-secondary mb-2">Orange Digital Center</h6>
+                                            <h5 class="card-title"><b id="cert7Title">Initiation Arduino</b></h5>
+                                            <h6 class="card-subtitle text-body-secondary mb-2" id="cert7Org">Orange Digital Center</h6>
                                             <h6 class="card-subtitle text-muted">2024</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-auto pt-3">
-                                    <a href="https://drive.google.com/file/d/1z_bDTw8xTBLVO2hvq3VXLZfbUiS_9XaG/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
+                                    <a id="cert7Btn" href="https://drive.google.com/file/d/1z_bDTw8xTBLVO2hvq3VXLZfbUiS_9XaG/view?usp=sharing" target="_blank" class="btn">Voir Certificat →</i></a>
                                 </div>
                             </div>  
                         </div>
@@ -646,7 +646,7 @@
             </div>
         </section>
         <!--Contact section-->
-        <h1 class="d-flex justify-content-center m-5"><b>MES CONTACTS</b></h1>
+        <h1 class="d-flex justify-content-center m-5"><b id="contactTitle">MES CONTACTS</b></h1>
         <section id="contact" class="px-4">
             <div class="container p-3">
                 <div class="row justify-content-center justify-content-lg-between">
@@ -658,16 +658,16 @@
                                     <!--access key-->
                                     <input type="hidden" name="access_key" value="caac8fa7-b732-489e-851f-39ba7b6a18e8">
 						        	<div class="form-group col-md-6">
-						        		<input type="text" name="name" class="form-control" placeholder="Nom" required="required">
+						        		<input type="text" id="namePlaceholder" name="name" class="form-control" placeholder="Nom" required="required">
 						        	</div>
 						        	<div class="form-group col-md-6">
-						        		<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+						        		<input type="email" id="emailPlaceholder" name="email" class="form-control" placeholder="Email" required="required">
 						        	</div>
 						        	<div class="form-group col-md-12">
-						        		<input type="text" name="subject" class="form-control" placeholder="Objet" required="required">
+						        		<input type="text" id="subjectPlaceholder" name="subject" class="form-control" placeholder="Objet" required="required">
 						        	</div>
 						        	<div class="form-group col-md-12">
-						        		<textarea rows="7" name="message" class="form-control" placeholder="Votre Message" required="required"></textarea>
+						        		<textarea rows="7" id="messagePlaceholder" name="message" class="form-control" placeholder="Votre Message" required="required"></textarea>
 						        	</div>
 						        	<div class="col-md-12 text-center">
 						        		<button type="submit" value="Send message" name="submit" id="submitButton" class="btn my-5 px-4 py-2" title="Submit Your Message!">Envoyer</button>
@@ -683,7 +683,7 @@
                                 <h1><i class="bi bi-geo-alt-fill"></i></h1>
                             </div>
                             <div>
-                                <h4>Mon adresse</h4>
+                                <h4 id="addressTitle">Mon adresse</h4>
                                 <p>Lot II E 2 Y S W Ambatokaranana</p>
                             </div>
                         </div>
@@ -692,7 +692,7 @@
                                 <h1><i class="bi bi-envelope-fill"></i></h1>
                             </div>
                             <div>
-                                <h4>Envoyez votre message</h4>
+                                <h4 id="emailTitle">Envoyez votre message</h4>
                                 <p>anjaraven159@gmail.com</p>
                             </div>
                         </div>
@@ -701,7 +701,7 @@
                                 <h1><i class="bi bi-whatsapp"></i></i></h1>
                             </div>
                             <div>
-                                <h4>Mon Whatsapp</h4>
+                                <h4 id="whatsappTitle">Mon Whatsapp</h4>
                                 <p>+261 38 816 45</p>
                             </div>
                         </div>
@@ -714,10 +714,10 @@
         <div class="container pt-3">
             <div class="m-1 p-3">
             <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-5">
-                <a class="nav-link" href="#about">À Propos</a>
-                <a class="nav-link" href="#skills">Compétences</a>
-                <a class="nav-link" href="#projects">Projets</a>
-                <a class="nav-link" href="#certificates">Certificats</a>
+                <a class="nav-link" href="#about" id="footerAbout">À Propos</a>
+                <a class="nav-link" href="#skills" id="footerSkills">Compétences</a>
+                <a class="nav-link" href="#projects" id="footerProjects">Projets</a>
+                <a class="nav-link" href="#certificates" id="footerCertificates">Certificats</a>
             </div>
         </div>     
         <div class="row">
