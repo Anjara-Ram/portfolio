@@ -129,6 +129,10 @@
 .social-icon:hover {
   transform: translateY(-10px);
 }
+
+#home .button-group {
+  padding-top: 20px;
+}
 #cv-contact {
   text-decoration: none;
   background: #00B4CB;
