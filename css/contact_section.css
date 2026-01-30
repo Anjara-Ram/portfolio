@@ -31,6 +31,8 @@
 @media (max-width: 991px) {
     #contact .contact-right{
         max-width: 100%;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     #contact h4 {
         font-size: 1.4rem;
