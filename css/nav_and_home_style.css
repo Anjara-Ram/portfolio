@@ -72,7 +72,7 @@
 
 
 /* TYPEWRITER */
-@keyframes typingDegree {
+@keyframes typingDegreeFr {
   0%, 20% { content: ""; }
   22% { content: "M"; }
   24% { content: "Ma"; }
@@ -90,6 +90,21 @@
   48% { content: "Mathématiques Appli"; }
   50%, 100% { content: "Mathématiques Appliquées"; }
 }
+/* English typing */
+@keyframes typingDegreeEn {
+  0%, 20% { content: ""; }
+  22% { content: "A"; }
+  24% { content: "Ap"; }
+  26% { content: "App"; }
+  28% { content: "Appl"; }
+  30% { content: "Appli"; }
+  32% { content: "Applied"; }
+  36% { content: "Applied "; }
+  40% { content: "Applied M"; }
+  44% { content: "Applied Ma"; }
+  48% { content: "Applied Math"; }
+  52%, 100% { content: "Applied Mathematics"; }
+}
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
@@ -100,7 +115,13 @@
   content: "";
   animation: typingDegree 6s infinite;
 }
+.degree-fr::before {
+  animation-name: typingDegreeFr;
+}
 
+.degree-en::before {
+  animation-name: typingDegreeEn;
+}
 .typewriter-degree::after {
   content: "";
   border-right: 2px solid currentColor;
@@ -133,7 +154,7 @@
 #home .button-group {
   padding-top: 20px;
 }
-#cv-contact {
+.cv-contact {
   text-decoration: none;
   background: #00B4CB;
   background: linear-gradient(45deg, rgba(0, 180, 203, 1) 0%, rgba(49, 204, 225, 1) 50%, rgba(83, 237, 224, 1) 100%);border-radius: 35px;
@@ -143,11 +164,12 @@
   font-weight: 600;
 }
 
-#cv-contact:hover {
+.cv-contact:hover {
   transform: translateY(-10px);
+  color: var(--text-color-dark);
   box-shadow:0 10px 20px rgba(0,0,0,.40);
 }
-#contact-logo {
+.contact-logo {
   text-decoration: none;
   background-color: transparent;
   color: var(--text-color-dark);
@@ -160,7 +182,7 @@
     text-align: center;
   }
 
-  #cv-contact{
+  .cv-contact{
     font-size: 0.8rem;
   }
 

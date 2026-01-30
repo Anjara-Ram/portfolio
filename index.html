@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anjara Fitahiana Ramninintsoa</title>
+    <link rel="icon" type="image/icon" href="assets/picture/web-logo.png">
     <!--Import Bootstrap and Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
@@ -30,17 +31,21 @@
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
                     <a href="#home" class="navbar-brand"><img class="logo" src="assets/picture/my_logo.png" alt="logo"></a>
+                    <select class="nav-link px-2 btn sdropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="">
+                        <option value="french" name="french">FR</option>
+                        <option value="english" name="english">EN</option>
+                    </select>
                     <button id="burger" class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav ms-auto gap-3">
-                            <li class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
-                            <li class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
-                            <li class="nav-item"><a class="nav-link px-2" href="#projects">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link px-2" href="#certificates">Certificats</a></li>
-                            <li class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>      
+                            <li id="navLink1" class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
+                            <li id="navLink2" class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
+                            <li id="navLink3" class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
+                            <li id="navLink4" class="nav-item"><a class="nav-link px-2" href="#projects">Projets</a></li>
+                            <li id="navLink5" class="nav-item"><a class="nav-link px-2" href="#certificates">Certificats</a></li>
+                            <li id="navLink6" class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>      
                         </ul>
                     </div>
                 </div>
@@ -48,18 +53,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 col-xxl-5 order-lg-1">
-                        <h4>Bonjour, Je m'appelle</h4>
-                        <h1 class="mt-5 masked-text">Anjara Fitahiana RAMBININTSOA</h1>
-                        <h3 class="my-5 degree">Licencié en <br> <span class="maths-appli typewriter-degree"></span></h3>
-                        <p>Passionné par la data science et l’intelligence artificielle, je m’intéresse particulièrement à la résolution de problèmes mathématiques appliqués à l’informatique. Curieux et motivé par les défis techniques,
-                             je cherche constamment à approfondir mes compétences et à relever de nouveaux challenges
+                        <h4 id="heroText1">Bonjour, Je m'appelle</h4>
+                        <h1 id="heroText2" class="mt-5 masked-text">Anjara Fitahiana RAMBININTSOA</h1>
+                        <h3 id="heroText3" class="my-5 degree">Licencié en <br> <span id="heroDegree" class="maths-appli typewriter-degree degree-fr"></span></h3>
+                        <p id="heroParagraph">Passionné par la data science et l’intelligence artificielle, je m’intéresse particulièrement à la résolution de problèmes mathématiques appliqués à l’informatique. Curieux et motivé par les défis techniques,
+                             je cherche constamment à approfondir mes compétences et à relever de nouveaux défis
                         </p>
                         <div class="flex-column flex-md-row gap-3 align-items-start mt-4 button-group">
-                            <a id="cv-contact" class="px-2 py-2 m-3" target="_blank" href="assets/pdf/Anjara-Fitahiana-CV.pdf">
-                                Télécharger CV <i id="contact-logo" class="fa-solid fa-download"></i>
+                            <a id="heroBtn1" class="cv-contact px-2 py-2 m-3" target="_blank" href="assets/pdf/Anjara-Fitahiana-CV-Fr.pdf">
+                                Télécharger CV <i class="contact-logo fa-solid fa-download"></i>
                             </a>
-                            <a id="cv-contact" class="px-2 py-2 m-3" href="#contact">
-                                Me Contacter <i  id="contact-logo" class="bi bi-telephone-fill"></i>
+                            <a id="heroBtn2" class="cv-contact px-2 py-2 m-3" href="#contact">
+                                Me Contacter <i class="contact-logo bi bi-telephone-fill"></i>
                             </a>
                         </div>
                     </div>
@@ -745,7 +750,8 @@
         </div>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
+<script src="js/translation.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
