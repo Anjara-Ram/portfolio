@@ -26,8 +26,25 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 #contact i, #contact p {
-    color: #b1f7ff;;
+    color: #b1f7ff;
 }
+
+#contact .btn {
+    text-decoration: none;
+    background: #00B4CB;
+    background: linear-gradient(90deg, rgba(0, 180, 203, 1) 0%, rgba(49, 204, 225, 1) 50%, rgba(83, 237, 224, 1) 100%);
+    border-radius: 35px;
+    color: var(--text-color-dark);
+    transition: all 0.4s;
+    width: fit-content;
+    font-weight: 600;
+}
+
+#contact .btn:hover{
+    transform: translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,.40);
+}
+
 @media (max-width: 991px) {
     #contact .contact-right{
         max-width: 100%;

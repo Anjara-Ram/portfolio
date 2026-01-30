@@ -6,6 +6,10 @@
   background-size: cover;
   padding-top: 150px;
 }
+#home nav {
+  background: rgba(0,0,0,0.4) !important;
+  backdrop-filter: blur(20px);
+}
 .nav-link {
   text-decoration: none;
   transition: 0.4s;
@@ -56,15 +60,16 @@
         background-position: 100% 50%;
     }
 }
-
-.navbar {
-  backdrop-filter: blur(5px);
-}
 /* maths appli */
 .degree {
   font-size: clamp(1.2rem, 4vw, 2rem); /* mobile friendly */
   white-space: nowrap;
 }
+
+.maths-appli {
+  color: var(--text-color-cyan);
+}
+
 
 /* TYPEWRITER */
 @keyframes typingDegree {
@@ -114,11 +119,6 @@
   }
 }
 
-
-.maths-appli {
-  color: var(--text-color-cyan2);
-}
-
 /* social-media */
 .social-icon{
   text-decoration: none;
@@ -131,8 +131,8 @@
 }
 #cv-contact {
   text-decoration: none;
-  background-color: var(--text-color-cyan);
-  border-radius: 35px;
+  background: #00B4CB;
+  background: linear-gradient(45deg, rgba(0, 180, 203, 1) 0%, rgba(49, 204, 225, 1) 50%, rgba(83, 237, 224, 1) 100%);border-radius: 35px;
   color: var(--text-color-dark);
   transition: all 0.4s;
   width: fit-content;
@@ -150,9 +150,6 @@
 }
 
 @media (max-width: 1200px) { /* lg breakpoint */
-  .navbar-collapse {
-    backdrop-filter: blur(8px);            /* optional modern blur */
-  }
 
   .navbar-nav {
     flex-direction: column;
@@ -169,5 +166,19 @@
 
   .navbar-nav .nav-link:hover {
     color: #007bff; /* highlight color */
+  }
+}
+@media (min-width:992px){
+  #home h4{
+    font-size: 1.2rem;
+  }
+  #home h1 {
+    font-size: 3.5rem;
+  }
+  #home h3 {
+    font-size: 2rem;
+  }
+  #home p{
+    font-size: 1.2rem;
   }
 }
