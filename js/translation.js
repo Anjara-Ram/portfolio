@@ -199,10 +199,7 @@ let translations = {
 
 const languageToggle = document.getElementById('languageToggle');
 
-languageToggle.addEventListener('change', () => {
-    const language = languageToggle.checked ? 'english' : 'french';
-    setLanguage(language);
-});
+
 
 let navLink1 = document.getElementById("navLink1");
 let navLink2 = document.getElementById("navLink2");
@@ -402,29 +399,39 @@ const setLanguage = (language) => {
         heroDegree.classList.remove("degree-fr");
         heroDegree.classList.add("degree-en");
         heroBtn1.href = "assets/pdf/Anjara-Fitahiana-CV-En.pdf"
-
-         //about section
-        aboutText.innerText = translations.english.at1;
     }
 }
 
+// saved language choice
+function saveLanguagePreference(language) {
+    localStorage.setItem('preferredLanguage', language);
+}
 
-// Initialize with saved language or default to English
+// getting the saved language
+function getSavedLanguagePreference() {
+    return localStorage.getItem('preferredLanguage');
+}
+
+//update the toggle
+languageToggle.addEventListener('change', () => {
+    const language = languageToggle.checked ? 'english' : 'french';
+    setLanguage(language);
+    saveLanguagePreference(language); // Save the selection
+});
+
+//initialize the page with svaed language
 window.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = getSavedLanguagePreference();
     
     if (savedLanguage) {
         // Use saved language
-        if (savedLanguage === 'english') {
-            languageToggle.checked = true;
-        } else {
-            languageToggle.checked = false;
-        }
+        languageToggle.checked = savedLanguage === 'english';
         setLanguage(savedLanguage);
     } else {
-        // No saved preference, default to English
-        setLanguage('english');
+        // Default to English
         languageToggle.checked = true;
-        saveLanguagePreference('english'); // Save default preference
+        setLanguage('english');
+        saveLanguagePreference('english');
     }
 });
+
