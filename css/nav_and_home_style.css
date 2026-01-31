@@ -43,7 +43,7 @@
 .masked-text {
     font-weight: bold;
     color: transparent;
-    background-image: url("../assets/image/background.jpg"); 
+    background-image: url("../assets/image/background.png"); 
     background-size: 200%; /* Enlarged for smooth animation */
     background-position: 0 50%;
     background-clip: text;
@@ -115,6 +115,12 @@
   content: "";
   animation: typingDegree 6s infinite;
 }
+.typewriter-degree::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  display: inline-block;
+}
 .degree-fr::before {
   animation-name: typingDegreeFr;
 }
@@ -122,12 +128,7 @@
 .degree-en::before {
   animation-name: typingDegreeEn;
 }
-.typewriter-degree::after {
-  content: "";
-  border-right: 2px solid currentColor;
-  margin-left: 2px;
-  animation: blink 0.8s infinite;
-}
+
 
 /* Accessibility */
 @media (prefers-reduced-motion) {
@@ -193,6 +194,28 @@
   .navbar-nav .nav-link:hover {
     color: #007bff; /* highlight color */
   }
+  .logo {
+  width: 120px;
+  height: 80px;
+}
+@media (max-width: 992px) {
+  .logo {
+  width: 100px;
+  height: 60px;
+  }
+  #home h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #home h3 span {
+    font-size: 1.4rem;
+  }
+  #home h1 {
+    font-size: 2.3rem;
+  }
+}
 }
 @media (min-width:992px){
   #home h4{
@@ -203,6 +226,9 @@
   }
   #home h3 {
     font-size: 2rem;
+  }
+  #home h3 span{
+    font-size: 2.6rem;
   }
   #home p{
     font-size: 1.2rem;

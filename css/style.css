@@ -39,3 +39,162 @@ body {
     border-radius: 50%;
     width: 70%;
 }
+
+
+
+
+/* language switch design*/
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-secondary); /* En  letter*/
+    min-width: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--card-color) !important;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-secondary);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #0d6efd;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/* Optional: Add animation to labels */
+.lang-label {
+    transition: color 0.3s ease;
+}
+
+.lang-label:first-child {
+    color: var(--color-secondary); /* FR letter */
+}
+
+input:checked ~ .lang-label:first-child {
+    color: #ffffff;
+}
+
+input:checked ~ .lang-label:last-child {
+    color: #0d6efd;
+}
+/* Specific styles for 991px and below */
+@media (max-width: 991px) {
+    .language-switcher {
+        gap: 8px; /* Fixed smaller gap for mobile */
+    }
+    
+    .toggle-switch {
+        gap: 6px; /* Fixed smaller gap for mobile */
+    }
+    
+    .lang-label {
+        font-size: 13px; /* Slightly smaller font for mobile */
+        min-width: 18px;
+    }
+    
+    .switch {
+        width: 55px; /* Slightly smaller for mobile */
+        height: 27px;
+    }
+    
+    .slider {
+        border-radius: 27px;
+    }
+    
+    .slider:before {
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 3px;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(28px); /* Adjusted for mobile size */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .language-switcher {
+        gap: 6px;
+    }
+    
+    .toggle-switch {
+        gap: 4px;
+    }
+    
+    .lang-label {
+        font-size: 12px;
+        min-width: 16px;
+    }
+    
+    .switch {
+        width: 50px;
+        height: 25px;
+    }
+    
+    .slider {
+        border-radius: 25px;
+    }
+    
+    .slider:before {
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(25px);
+    }
+}

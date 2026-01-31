@@ -178,7 +178,7 @@ let translations = {
         cert7Btn: "View Certificate →",
 
         // contact section
-        contactTitle: "MY CONTACTS",
+        contactTitle: "GET IN TOUCH",
         namePlaceholder: "Name",
         emailPlaceholder: "Email",
         subjectPlaceholder: "Subject",
@@ -198,7 +198,12 @@ let translations = {
 
 }
 
-const languageSelecter = document.querySelector("select");
+const languageToggle = document.getElementById('languageToggle');
+
+languageToggle.addEventListener('change', () => {
+    const language = languageToggle.checked ? 'english' : 'french';
+    setLanguage(language);
+});
 
 let navLink1 = document.getElementById("navLink1");
 let navLink2 = document.getElementById("navLink2");
@@ -293,105 +298,103 @@ let footerSkills = document.getElementById("footerSkills");
 let footerProjects = document.getElementById("footerProjects");
 let footerCertificates = document.getElementById("footerCertificates");
 
-languageSelecter.addEventListener("change", (event) => {
-    setLanguage(event.target.value);
-})
-
 const setLanguage = (language) => {
     const lang = translations[language];
-     navLink1.innerText = lang.menu1;
-        navLink2.innerText = lang.menu2;
-        navLink3.innerText = lang.menu3;
-        navLink4.innerText = lang.menu4;
-        navLink5.innerText = lang.menu5;
-        navLink6.innerText = lang.menu6;
-        heroParagraph.textContent = lang.heroParagraph;
-        //hero section
-        heroText1.textContent = lang.heroText1;
-        heroText3.innerHTML = `${lang.heroText3} <br> <span id="heroDegree" class="maths-appli typewriter-degree"></span>`;
-        heroBtn1.innerHTML = `${lang.heroBtn1} <i class="contact-logo fa-solid fa-download"></i>`;
-        heroBtn2.innerHTML = `${lang.heroBtn2} <i class="contact-logo bi bi-telephone-fill"></i>`;
-        //about section
-        aboutText.innerText = lang.at1;
-        academicTitle.innerText = lang.academicTitle;
-        degree1.innerText = lang.degree1;
-        university1.innerText = lang.university1;
-        year1.innerText = lang.year1;
-        degree2.innerText = lang.degree2;
-        university2.innerText = lang.university2;
-        year2.innerText = lang.year2;
-        degree3.innerText = lang.degree3;
-        university3.innerText = lang.university3;
-        year3.innerText = lang.year3;
-        aboutParagraph.innerText = lang.aboutParagraph;
+    navLink1.innerText = lang.menu1;
+    navLink2.innerText = lang.menu2;
+    navLink3.innerText = lang.menu3;
+    navLink4.innerText = lang.menu4;
+    navLink5.innerText = lang.menu5;
+    navLink6.innerText = lang.menu6;
+    heroParagraph.textContent = lang.heroParagraph;
+    
+    //hero section
+    heroText1.textContent = lang.heroText1;
+    heroText3.innerHTML = `${lang.heroText3} <br> <span id="heroDegree" class="maths-appli typewriter-degree"></span>`;
+    heroBtn1.innerHTML = `${lang.heroBtn1} <i class="contact-logo fa-solid fa-download"></i>`;
+    heroBtn2.innerHTML = `${lang.heroBtn2} <i class="contact-logo bi bi-telephone-fill"></i>`;
 
-        // skills section
-        skillsTitle.innerText = lang.skillsTitle;
-        programmingTitle.innerText = lang.programmingTitle;
-        mlTitle.innerText = lang.mlTitle;
-        dataAnalysisTitle.innerText = lang.dataAnalysisTitle;
-        webDevTitle.innerText = lang.webDevTitle;
-        toolsTitle.innerText = lang.toolsTitle;
-        designTitle.innerText = lang.designTitle;
+    //about section
+    aboutText.innerText = lang.at1;
+    academicTitle.innerText = lang.academicTitle;
+    degree1.innerText = lang.degree1;
+    university1.innerText = lang.university1;
+    year1.innerText = lang.year1;
+    degree2.innerText = lang.degree2;
+    university2.innerText = lang.university2;
+    year2.innerText = lang.year2;
+    degree3.innerText = lang.degree3;
+    university3.innerText = lang.university3;
+    year3.innerText = lang.year3;
+    aboutParagraph.innerText = lang.aboutParagraph;
 
-        // projects section
-        projectsTitle.innerText = lang.projectsTitle;
-        project1Title.innerText = lang.project1Title;
-        project1Desc.innerText = lang.project1Desc;
-        project2Title.innerText = lang.project2Title;
-        project2Desc.innerText = lang.project2Desc;
-        project3Title.innerText = lang.project3Title;
-        project3Desc.innerText = lang.project3Desc;
-        project4Title.innerText = lang.project4Title;
-        project4Desc.innerText = lang.project4Desc;
-        project5Title.innerText = lang.project5Title;
-        project5Desc.innerText = lang.project5Desc;
-        project6Title.innerText = lang.project6Title;
-        project6Desc.innerText = lang.project6Desc;
+    // skills section
+    skillsTitle.innerText = lang.skillsTitle;
+    programmingTitle.innerText = lang.programmingTitle;
+    mlTitle.innerText = lang.mlTitle;
+    dataAnalysisTitle.innerText = lang.dataAnalysisTitle;
+    webDevTitle.innerText = lang.webDevTitle;
+    toolsTitle.innerText = lang.toolsTitle;
+    designTitle.innerText = lang.designTitle;
 
-        // certificates section
-        certificatesTitle.innerText = lang.certificatesTitle;
-        cert1Title.innerText = lang.cert1Title;
-        cert1Org.innerText = lang.cert1Org;
-        cert1Btn.innerText = lang.cert1Btn;
-        cert2Title.innerText = lang.cert2Title;
-        cert2Org.innerText = lang.cert2Org;
-        cert2Btn.innerText = lang.cert2Btn;
-        cert3Title.innerText = lang.cert3Title;
-        cert3Org.innerText = lang.cert3Org;
-        cert3Btn.innerText = lang.cert3Btn;
-        cert4Title.innerText = lang.cert4Title;
-        cert4Org.innerText = lang.cert4Org;
-        cert4Btn.innerText = lang.cert4Btn;
-        cert5Title.innerText = lang.cert5Title;
-        cert5Org.innerText = lang.cert5Org;
-        cert5Btn.innerText = lang.cert5Btn;
-        cert6Title.innerText = lang.cert6Title;
-        cert6Org.innerText = lang.cert6Org;
-        cert6Btn.innerText = lang.cert6Btn;
-        cert7Title.innerText = lang.cert7Title;
-        cert7Org.innerText = lang.cert7Org;
-        cert7Btn.innerText = lang.cert7Btn;
+    // projects section
+    projectsTitle.innerText = lang.projectsTitle;
+    project1Title.innerText = lang.project1Title;
+    project1Desc.innerText = lang.project1Desc;
+    project2Title.innerText = lang.project2Title;
+    project2Desc.innerText = lang.project2Desc;
+    project3Title.innerText = lang.project3Title;
+    project3Desc.innerText = lang.project3Desc;
+    project4Title.innerText = lang.project4Title;
+    project4Desc.innerText = lang.project4Desc;
+    project5Title.innerText = lang.project5Title;
+    project5Desc.innerText = lang.project5Desc;
+    project6Title.innerText = lang.project6Title;
+    project6Desc.innerText = lang.project6Desc;
 
-        // contact section
-        contactTitle.innerText = lang.contactTitle;
-        namePlaceholder.placeholder = lang.namePlaceholder;
-        emailPlaceholder.placeholder = lang.emailPlaceholder;
-        subjectPlaceholder.placeholder = lang.subjectPlaceholder;
-        messagePlaceholder.placeholder = lang.messagePlaceholder;
-        submitButton.innerText = lang.submitButton;
-        addressTitle.innerText = lang.addressTitle;
-        emailTitle.innerText = lang.emailTitle;
-        whatsappTitle.innerText = lang.whatsappTitle;
+    // certificates section
+    certificatesTitle.innerText = lang.certificatesTitle;
+    cert1Title.innerText = lang.cert1Title;
+    cert1Org.innerText = lang.cert1Org;
+    cert1Btn.innerText = lang.cert1Btn;
+    cert2Title.innerText = lang.cert2Title;
+    cert2Org.innerText = lang.cert2Org;
+    cert2Btn.innerText = lang.cert2Btn;
+    cert3Title.innerText = lang.cert3Title;
+    cert3Org.innerText = lang.cert3Org;
+    cert3Btn.innerText = lang.cert3Btn;
+    cert4Title.innerText = lang.cert4Title;
+    cert4Org.innerText = lang.cert4Org;
+    cert4Btn.innerText = lang.cert4Btn;
+    cert5Title.innerText = lang.cert5Title;
+    cert5Org.innerText = lang.cert5Org;
+    cert5Btn.innerText = lang.cert5Btn;
+    cert6Title.innerText = lang.cert6Title;
+    cert6Org.innerText = lang.cert6Org;
+    cert6Btn.innerText = lang.cert6Btn;
+    cert7Title.innerText = lang.cert7Title;
+    cert7Org.innerText = lang.cert7Org;
+    cert7Btn.innerText = lang.cert7Btn;
 
-        // footer section
-        footerAbout.innerText = lang.footerAbout;
-        footerSkills.innerText = lang.footerSkills;
-        footerProjects.innerText = lang.footerProjects;
-        footerCertificates.innerText = lang.footerCertificates;
+    // contact section
+    contactTitle.innerText = lang.contactTitle;
+    namePlaceholder.placeholder = lang.namePlaceholder;
+    emailPlaceholder.placeholder = lang.emailPlaceholder;
+    subjectPlaceholder.placeholder = lang.subjectPlaceholder;
+    messagePlaceholder.placeholder = lang.messagePlaceholder;
+    submitButton.innerText = lang.submitButton;
+    addressTitle.innerText = lang.addressTitle;
+    emailTitle.innerText = lang.emailTitle;
+    whatsappTitle.innerText = lang.whatsappTitle;
+
+    // footer section
+    footerAbout.innerText = lang.footerAbout;
+    footerSkills.innerText = lang.footerSkills;
+    footerProjects.innerText = lang.footerProjects;
+    footerCertificates.innerText = lang.footerCertificates;
 
     if (language == "french") {
-       
+        
         heroDegree.classList.remove("degree-en");
         heroDegree.classList.add("degree-fr");
         heroBtn1.href = "assets/pdf/Anjara-Fitahiana-CV-Fr.pdf"      
@@ -407,7 +410,22 @@ const setLanguage = (language) => {
 }
 
 
+// Initialize with saved language or default to English
 window.addEventListener('DOMContentLoaded', () => {
-    const currentLang = languageSelector.value;
-    setLanguage(currentLang);
+    const savedLanguage = getSavedLanguagePreference();
+    
+    if (savedLanguage) {
+        // Use saved language
+        if (savedLanguage === 'english') {
+            languageToggle.checked = true;
+        } else {
+            languageToggle.checked = false;
+        }
+        setLanguage(savedLanguage);
+    } else {
+        // No saved preference, default to English
+        setLanguage('english');
+        languageToggle.checked = true;
+        saveLanguagePreference('english'); // Save default preference
+    }
 });

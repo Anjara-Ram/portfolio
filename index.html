@@ -31,15 +31,22 @@
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
                     <a href="#home" class="navbar-brand"><img class="logo" src="assets/picture/my_logo.png" alt="logo"></a>
-                    <select class="nav-link px-2 btn sdropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="">
-                        <option value="french" name="french">FR</option>
-                        <option value="english" name="english">EN</option>
-                    </select>
+                    <div class="language-switcher d-lg-block order-lg-2 ms-lg-auto">  
+                        <!-- Toggle switch -->
+                        <div class="toggle-switch">
+                            <span class="lang-label">FR</span>
+                            <label class="switch">
+                                <input type="checkbox" id="languageToggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="lang-label">EN</span>
+                        </div>
+                    </div>
                     <button id="burger" class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav ms-auto gap-3">
+                    <div class="collapse navbar-collapse order-2 order-lg-1 me-lg-5" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ms-lg-auto gap-lg-3">
                             <li id="navLink1" class="nav-item"><a class="nav-link px-2" href="#home">Accueil</a></li>
                             <li id="navLink2" class="nav-item"><a class="nav-link px-2" href="#about">À Propos</a></li>
                             <li id="navLink3" class="nav-item"><a class="nav-link px-2" href="#skills">Compétences</a></li>
@@ -59,7 +66,7 @@
                         <p id="heroParagraph">Passionné par la data science et l’intelligence artificielle, je m’intéresse particulièrement à la résolution de problèmes mathématiques appliqués à l’informatique. Curieux et motivé par les défis techniques,
                              je cherche constamment à approfondir mes compétences et à relever de nouveaux défis
                         </p>
-                        <div class="flex-column flex-md-row gap-3 align-items-start mt-4 button-group">
+                        <div class="gap-3 button-group d-flex justify-content-center justify-content-lg-start">
                             <a id="heroBtn1" class="cv-contact px-2 py-2 m-3" target="_blank" href="assets/pdf/Anjara-Fitahiana-CV-Fr.pdf">
                                 Télécharger CV <i class="contact-logo fa-solid fa-download"></i>
                             </a>
