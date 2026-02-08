@@ -50,6 +50,7 @@ let translations = {
         project3Desc: "Application Android conçue pour offrir une collection accessible et organisée de nos chants chrétiens et évangéliques.",
         project4Title: "Site de Portfolio académiques",
         project4Desc: "Un espace dédié à mes projets universitaires et à mes expériences académiques.",
+        project5Title: "Système de reconnaissance faciale",
         project5Desc: "Un projet Machine Learning mettant en œuvre la reconnaissance faciale sur l'ensemble de données Labeled Faces in the Wild.",
         project6Title: "Prédiction du cancer du sein",
         project6Desc: "Une implémentation de Machine Learning afin de faire une classification binaire des tumeurs du cancer du sein en malignes ou bénignes.",
